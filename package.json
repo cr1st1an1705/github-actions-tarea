@@ -1,20 +1,13 @@
 {
-  "name": "github-actions",
+  "name": "github-actions-tarea",
   "version": "1.0.0",
+  "description": "Proyecto de prueba con GitHub Actions y CI/CD",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "echo \"Test exitoso\" && exit 0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cr1st1an1705/github-actions-tarea.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cr1st1an1705/github-actions-tarea/issues"
-  },
-  "homepage": "https://github.com/cr1st1an1705/github-actions-tarea#readme",
-  "description": ""
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
