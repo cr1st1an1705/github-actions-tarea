@@ -1,12 +1,14 @@
 {
-  "name": "github-actions-tarea",
+  "name": "ci-cd-github-actions-demo",
   "version": "1.0.0",
-  "description": "Proyecto de prueba con GitHub Actions y CI/CD",
+  "description": "Demo de CI/CD con GitHub Actions",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Test exitoso\" && exit 0"
   },
+  "author": "cr1st1an1705",
+  "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
   }

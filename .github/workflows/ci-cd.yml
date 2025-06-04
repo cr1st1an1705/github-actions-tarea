@@ -23,8 +23,8 @@ jobs:
     - name: Ejecutar pruebas
       run: npm test
 
-    - name: Iniciar servidor (prueba local)
+    - name: Verificar API funcionando
       run: |
         nohup npm start &
         sleep 5
-        curl http://localhost:3000 || echo "Error en respuesta del servidor"
+        curl http://localhost:3000 || echo "API no respondió"
