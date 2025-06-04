@@ -1,9 +1,7 @@
-name: Node.js CI-CD
+name: CI-CD Node.js
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
     branches: [ main ]
 
 jobs:
@@ -25,8 +23,8 @@ jobs:
     - name: Ejecutar pruebas
       run: npm test
 
-    - name: Compilar proyecto
-      run: npm run build || echo "No hay script de build"
-
-    - name: Deploy simulado
-      run: echo "Aquí pondrías tu comando de deploy real"
+    - name: Iniciar servidor (prueba local)
+      run: |
+        nohup npm start &
+        sleep 5
+        curl http://localhost:3000 || echo "Error en respuesta del servidor"
